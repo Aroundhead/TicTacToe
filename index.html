@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <p id="gameDescription">
+        Haz clic en una casilla para colocar tu ficha. El primero en alinear tres en fila gana.
+      </p>
+    <div id="controls">
+        <button id="btnReset">Reiniciar</button>
+
+        <select id="imageSelector">
+            <option value="par1">Par 1</option>
+            <option value="par2">Par 2</option>
+            <option value="par3">Par 3</option>
+        </select>
+
+        <div class="color-control">
+            <label for="oddCellColor">Color Celdas Impares:</label>
+            <input type="color" id="oddCellColor" value="#ffffff">
+        </div>
+
+        <div class="color-control">
+            <label for="evenCellColor">Color Celdas Pares:</label>
+            <input type="color" id="evenCellColor" value="#cccccc">
+        </div>
+
+        <div class="color-control">
+            <label for="winLineColor">Color Línea Ganadora:</label>
+            <input type="color" id="winLineColor" value="#ff0000">
+        </div>
+
+        <div id="turnDisplay">Turno: Jugador 1</div>
+        <div id="timer">03:00</div>
+        <div id="turnTimer">30</div>
+        <img id="nextTurnImage" src="" alt="" style="width:50px;height:50px;">
+    </div>
+    <div id="boardContainer"></div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
